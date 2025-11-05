@@ -5,7 +5,7 @@ def play():
     wins, losses, ties = 0, 0, 0
     while True:
         computer = random.choice(choices)
-        player = input("Enter rock, paper, or scissors (or 'quit' to exit): ").lower()
+        player = input("Enter rock, paper, or scissors (or 'quit' to exit): ").strip().lower()
 
         if player == "quit":
             print(f"Final Score -> Wins: {wins}, Losses: {losses}, Ties: {ties}")
