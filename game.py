@@ -1,3 +1,4 @@
+# Rock-Paper-Scissors game for FOP assessment
 import random
 
 def play():
