@@ -1,13 +1,13 @@
 import random
 
 def play():
+    """Main function to play Rock-Paper-Scissors game."""
     choices = ["rock", "paper", "scissors"]
-    wins, losses, ties = 0, 0, 0
-    round_number = 1
+    wins, losses, ties, round_number = 0, 0, 0, 1
+
     while True:
         print(f"\n--- Round {round_number} ---")
         round_number += 1
-        computer = random.choice(choices)
         player = input("Enter rock, paper, or scissors (or 'quit' to exit): ").strip().lower()
 
         if player == "quit":
@@ -19,6 +19,7 @@ def play():
             print("Invalid choice! Please choose rock, paper, or scissors.")
             continue
 
+        computer = random.choice(choices)
         print(f"Computer chose: {computer}")
 
         if player == computer:
