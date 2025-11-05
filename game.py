@@ -1,7 +1,7 @@
 import random
 
 def play():
-    """Main function to play Rock-Paper-Scissors game."""
+    """Main function for the Rock-Paper-Scissors game."""
     choices = ["rock", "paper", "scissors"]
     wins, losses, ties, round_number = 0, 0, 0, 1
 
