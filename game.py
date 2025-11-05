@@ -3,7 +3,10 @@ import random
 def play():
     choices = ["rock", "paper", "scissors"]
     wins, losses, ties = 0, 0, 0
+    round_number = 1
     while True:
+        print(f"\n--- Round {round_number} ---")
+        round_number += 1
         computer = random.choice(choices)
         player = input("Enter rock, paper, or scissors (or 'quit' to exit): ").strip().lower()
 
